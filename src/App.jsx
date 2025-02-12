@@ -2,7 +2,7 @@
 
 function App() {
   
-  return 'salut tout le monde'
+  return <h1>salut le monde</h1>
 }
 
 export default App
