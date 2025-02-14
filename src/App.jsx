@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
 
 export default function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,21 +27,21 @@ export default function HomePage() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <motion.nav initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="md:hidden bg-purple-200 p-4 flex flex-col space-y-2 text-lg">
+        <nav className="md:hidden bg-purple-200 p-4 flex flex-col space-y-2 text-lg animate-fade-in">
           <button className="hover:underline">ACCUEIL</button>
           <button className="hover:underline">A PROPOS DE NOUS</button>
           <button className="hover:underline">PAGES</button>
           <button className="hover:underline">PROGRAMME</button>
           <button className="hover:underline">CONTACTS</button>
           <button className="hover:underline">INSCRIPTION</button>
-        </motion.nav>
+        </nav>
       )}
 
       {/* Main Content */}
       <main className="h-[500px] bg-gradient-to-br from-pink-200 to-purple-200 flex flex-col items-center justify-center text-center p-6 shadow-xl rounded-lg mx-4 mt-6">
         <h1 className="text-5xl font-extrabold text-pink-700 drop-shadow-lg">Bienvenue à la crèche Les Minis Licornes</h1>
         <p className="text-xl text-purple-800 mt-4 max-w-xl">Un espace magique où vos enfants peuvent apprendre, jouer et grandir dans un environnement sécurisé et bienveillant.</p>
-        <motion.button whileHover={{ scale: 1.1 }} className="mt-6 px-8 py-3 bg-purple-500 text-white font-bold text-lg rounded-full shadow-lg hover:bg-purple-600 transition duration-300">Découvrir</motion.button>
+        <button className="mt-6 px-8 py-3 bg-purple-500 text-white font-bold text-lg rounded-full shadow-lg hover:bg-purple-600 transition duration-300 hover:scale-105">Découvrir</button>
       </main>
 
       {/* Footer */}
@@ -75,3 +74,4 @@ export default function HomePage() {
     </div>
   );
 }
+
