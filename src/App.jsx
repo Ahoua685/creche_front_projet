@@ -63,7 +63,7 @@ export default function HomePage() {
 
       {/* Testimonials */}
       <section className="p-8 bg-gray-200">
-        <h2 className="text-center text-xl font-bold text-gray-800">What Parents Say About Our</h2>
+        <h2 className="text-center text-xl font-bold text-gray-800">Avis et commentaire</h2>
         <div className="flex justify-center space-x-6 mt-4">
           <div className="bg-white p-4 shadow-md w-64">
             <h3 className="font-bold">JOHN DOE ⭐⭐⭐⭐⭐</h3>
@@ -79,15 +79,15 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="bg-gray-300 p-6 flex flex-col md:flex-row justify-between text-gray-800">
         <div>
-          <p className="font-bold">Voot Kids</p>
+          <p className="font-bold">Voot kids</p>
           <p>56 Main Street, PARIS</p>
           <p>hotline@gmail.com</p>
           <p>+33 02 65 42 65 89</p>
         </div>
         <div>
           <h3 className="font-bold">Horaires d'ouverture</h3>
-          <p>Samedi - Vendredi</p>
-          <p>08 am - 09 pm</p>
+          <p>Lundi - Vendredi</p>
+          <p>7h - 19h</p>
         </div>
         <div>
           <h3 className="font-bold">Notre Programme</h3>
