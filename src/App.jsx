@@ -50,12 +50,12 @@ export default function HomePage() {
         <div className="flex justify-center space-x-6 mt-4">
           <div className="bg-white p-4 shadow-md w-64 text-center">
             <div className="h-32 bg-gray-300"></div>
-            <h3 className="mt-2 font-bold">DRAWING & PAINTING</h3>
+            <h3 className="mt-2 font-bold">Dessins & Peinture</h3>
             <button className="mt-2 px-4 py-2 bg-gray-500 text-white rounded">DETAIL</button>
           </div>
           <div className="bg-white p-4 shadow-md w-64 text-center">
             <div className="h-32 bg-gray-300"></div>
-            <h3 className="mt-2 font-bold">DRAWING & PAINTING</h3>
+            <h3 className="mt-2 font-bold">Dessins & Peinture</h3>
             <button className="mt-2 px-4 py-2 bg-gray-500 text-white rounded">DETAIL</button>
           </div>
         </div>
@@ -91,12 +91,12 @@ export default function HomePage() {
         </div>
         <div>
           <h3 className="font-bold">Notre Programme</h3>
-          <p>Arts & Drawing</p>
-          <p>Arts & Drawing</p>
-          <p>Arts & Drawing</p>
+          <p>Arts et Dessins</p>
+          <p>Arts & Dessins</p>
+          <p>Arts & Dessins</p>
         </div>
         <div>
-          <h3 className="font-bold">Recent News</h3>
+          <h3 className="font-bold">Information</h3>
           <p>Fermeture exceptionnelle</p>
           <p>26 DEC 2026</p>
           <p>Fermeture exceptionnelle</p>
