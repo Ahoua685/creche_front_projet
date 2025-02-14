@@ -11,8 +11,8 @@ export default function HomePage() {
           <span>voot kids</span>
         </div>
         <div className="hidden md:flex space-x-6 text-white">
-          <button className="hover:underline">HOME</button>
-          <button className="hover:underline">ABOUT</button>
+          <button className="hover:underline">ACCUEIL</button>
+          <button className="hover:underline">A PROPOS DE NOUS</button>
           <button className="hover:underline">PAGES</button>
           <button className="hover:underline">PROGRAMS</button>
           <button className="hover:underline">CONTACTS</button>
