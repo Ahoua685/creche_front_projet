@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Menu } from "lucide-react";
 
 export default function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,7 +19,9 @@ export default function HomePage() {
           <span>INSCRIPTION</span>
         </div>
         <div className="md:hidden">
-          <Menu onClick={() => setMenuOpen(!menuOpen)} className="cursor-pointer" />
+          <button onClick={() => setMenuOpen(!menuOpen)} className="p-2 bg-gray-300 rounded">
+            ☰
+          </button>
         </div>
       </header>
 
@@ -69,9 +70,5 @@ export default function HomePage() {
         </div>
       </footer>
     </div>
-    
   );
 }
-
-
-
