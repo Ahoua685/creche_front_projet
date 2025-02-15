@@ -12,10 +12,28 @@ export default function HomePage() {
         <div className="flex items-center space-x-2">
           <FaMapMarkerAlt className="text-gray-600" />
           <span className="text-sm">56 Main Street, Paris</span>
+      <header className="bg-gray-300 p-4 flex justify-between items-center shadow-md">
+        <div className="flex items-center space-x-2 text-xl font-bold text-gray-800">
+          <span>Voot Kids</span>
         </div>
         <div className="flex items-center space-x-2">
           <FaPhoneAlt className="text-red-500" />
           <span className="text-sm">+33 58 69 52 63</span>
+        <div className="hidden md:flex space-x-6 text-gray-700">
+          <button className="hover:underline">ACCUEIL</button>
+          <button className="hover:underline">A PROPOS</button>
+          <button className="hover:underline">PAGES</button>
+          <button className="hover:underline">PROGRAMME</button>
+          <button className="hover:underline">CONTACT</button>
+          <button className="hover:underline">INSCRIPTION</button>
+        </div>
+        <div className="md:hidden">
+          <button onClick={() => setMenuOpen(!menuOpen)} className="p-2 bg-gray-400 rounded text-white">
+            {/* Icône Menu (≡) */}
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
         </div>
         <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden p-2">
           <FiMenu size={24} />
@@ -30,9 +48,21 @@ export default function HomePage() {
           </button>
         ))}
       </nav>
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <nav className="md:hidden bg-gray-200 p-4 flex flex-col space-y-2">
+          <button className="hover:underline">ACCUEIL</button>
+          <button className="hover:underline">A PROPOS</button>
+          <button className="hover:underline">PAGES</button>
+          <button className="hover:underline">PROGRAMME</button>
+          <button className="hover:underline">CONTACT</button>
+          <button className="hover:underline">INSCRIPTION</button>
+        </nav>
+      )}
 
       {/* Carousel */}
       <section className="bg-gray-200 h-64 flex items-center justify-between px-4">
+      <section className="bg-gray-200 h-64 flex items-center justify-center text-gray-600">
         <button className="text-3xl">❮</button>
         <div className="w-3/4 h-48 bg-gray-400 flex items-center justify-center">Slide Image</div>
         <button className="text-3xl">❯</button>
@@ -49,12 +79,23 @@ export default function HomePage() {
               <button className="mt-2 px-4 py-2 bg-red-500 text-white rounded">DETAIL</button>
             </div>
           ))}
+          <div className="bg-white p-4 shadow-md w-64 text-center">
+            <div className="h-32 bg-gray-300"></div>
+            <h3 className="mt-2 font-bold">Dessins & Peinture</h3>
+            <button className="mt-2 px-4 py-2 bg-gray-500 text-white rounded">DETAIL</button>
+          </div>
+          <div className="bg-white p-4 shadow-md w-64 text-center">
+            <div className="h-32 bg-gray-300"></div>
+            <h3 className="mt-2 font-bold">Dessins & Peinture</h3>
+            <button className="mt-2 px-4 py-2 bg-gray-500 text-white rounded">DETAIL</button>
+          </div>
         </div>
       </section>
 
       {/* Testimonials */}
       <section className="p-8 bg-gray-200">
         <h2 className="text-center text-xl font-bold text-gray-800">Ce que disent les parents</h2>
+        <h2 className="text-center text-xl font-bold text-gray-800">Avis et commentaire</h2>
         <div className="flex justify-center space-x-6 mt-4">
           {[{ name: "John Doe", rating: 5 }, { name: "Shara Clair", rating: 4 }].map((review, i) => (
             <div key={i} className="bg-white p-4 shadow-md w-64">
@@ -62,14 +103,24 @@ export default function HomePage() {
               <p className="text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
             </div>
           ))}
+          <div className="bg-white p-4 shadow-md w-64">
+            <h3 className="font-bold">JOHN DOE ⭐⭐⭐⭐⭐</h3>
+            <p className="text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+          </div>
+          <div className="bg-white p-4 shadow-md w-64">
+            <h3 className="font-bold">SHARA CLAIR ⭐⭐⭐⭐</h3>
+            <p className="text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+          </div>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="bg-gray-300 p-6 grid grid-cols-1 md:grid-cols-4 gap-4 text-gray-800">
+      <footer className="bg-gray-300 p-6 flex flex-col md:flex-row justify-between text-gray-800">
         <div>
           <p className="font-bold">Voot kids</p>
           <p>56 Main Street, Paris</p>
+          <p>56 Main Street, PARIS</p>
           <p>hotline@gmail.com</p>
           <p>+33 02 65 42 65 89</p>
         </div>
@@ -81,9 +132,14 @@ export default function HomePage() {
         <div>
           <h3 className="font-bold">Notre Programme</h3>
           <p>Arts et Dessins</p>
+          <p>Arts & Dessins</p>
+          <p>Arts & Dessins</p>
         </div>
         <div>
           <h3 className="font-bold">Informations</h3>
+          <h3 className="font-bold">Information</h3>
+          <p>Fermeture exceptionnelle</p>
+          <p>26 DEC 2026</p>
           <p>Fermeture exceptionnelle</p>
           <p>25 DEC 2026</p>
         </div>
@@ -91,6 +147,7 @@ export default function HomePage() {
     </div>
   );
 }
+
 
 
 
