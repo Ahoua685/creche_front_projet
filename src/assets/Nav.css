@@ -1,0 +1,67 @@
+/* Nav.css */
+.header {
+    width: 100%;
+    font-family: sans-serif; /* Adaptez selon votre charte graphique */
+  }
+  
+  /* Barre supérieure */
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2; /* Couleur claire, modifiez selon vos goûts */
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+  }
+  
+  .top-bar__title {
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+  
+  .top-bar__details {
+    margin-right: 1rem;
+  }
+  
+  .top-bar__location,
+  .top-bar__hotline {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Barre de navigation principale */
+  .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #fff; /* Couleur de fond, modifiez selon vos besoins */
+    border-bottom: 1px solid #ddd; /* Ligne de séparation discrète */
+  }
+  
+  .main-nav__logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333; /* Couleur du texte */
+  }
+  
+  .main-nav__links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-nav__links li {
+    margin-left: 1.5rem;
+  }
+  
+  .main-nav__links a {
+    text-decoration: none;
+    color: #333; /* Couleur des liens */
+    font-weight: 500;
+  }
+  
+  .main-nav__links a:hover {
+    color: #666; /* Effet au survol */
+  }
+  
