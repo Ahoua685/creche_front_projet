@@ -1,67 +1,93 @@
-/* Nav.css */
-.header {
-    width: 100%;
-    font-family: sans-serif; /* Adaptez selon votre charte graphique */
-  }
-  
-  /* Barre supérieure */
-  .top-bar {
-    display: flex;
-    justify-content: space-between;
-    background-color: #f2f2f2; /* Couleur claire, modifiez selon vos goûts */
-    padding: 0.5rem 2rem;
-    font-size: 0.9rem;
-  }
-  
-  .top-bar__title {
-    font-weight: bold;
-    margin-right: 0.5rem;
-  }
-  
-  .top-bar__details {
-    margin-right: 1rem;
-  }
-  
-  .top-bar__location,
-  .top-bar__hotline {
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Barre de navigation principale */
-  .main-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background-color: #fff; /* Couleur de fond, modifiez selon vos besoins */
-    border-bottom: 1px solid #ddd; /* Ligne de séparation discrète */
-  }
-  
-  .main-nav__logo h1 {
-    margin: 0;
-    font-size: 1.5rem;
-    color: #333; /* Couleur du texte */
-  }
-  
+/* Réinitialisation des marges et styles par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* ======= TOP BAR ======= */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ddd;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.top-bar__location,
+.top-bar__hotline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-bar__icon {
+  font-size: 18px;
+}
+
+.top-bar__title {
+  font-weight: bold;
+  display: block;
+}
+
+.top-bar__details {
+  color: #555;
+}
+
+/* ======= NAVIGATION ======= */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f0f0f0;
+  padding: 15px 20px;
+}
+
+.main-nav__logo h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.logo-accent {
+  color: #007bff; /* Bleu pour "kids" */
+}
+
+.main-nav__links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav__links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.main-nav__links li a:hover {
+  color: #007bff;
+}
+
+.main-nav__menu {
+  font-size: 24px;
+  display: none; /* Masqué par défaut, utilisé pour la version mobile */
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 768px) {
   .main-nav__links {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+    display: none;
   }
-  
-  .main-nav__links li {
-    margin-left: 1.5rem;
+
+  .main-nav__menu {
+    display: block;
   }
-  
-  .main-nav__links a {
-    text-decoration: none;
-    color: #333; /* Couleur des liens */
-    font-weight: 500;
-  }
-  
-  .main-nav__links a:hover {
-    color: #666; /* Effet au survol */
-  }
+}
+
   
